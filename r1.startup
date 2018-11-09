@@ -1,0 +1,8 @@
+# domain E
+ifconfig eth0 192.168.1.1/30 
+ifconfig eth1 10.1.1.253/24 
+
+#ifconfig eth1 
+
+ip route add 10.2.2.0/24 via 192.168.1.2
+route add default gw 10.1.1.254

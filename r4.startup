@@ -1,0 +1,7 @@
+# domain D
+ifconfig eth1 192.168.3.1/30 
+
+# domain B
+ifconfig eth0 10.2.2.254/24 
+
+route add default gw 192.168.3.2
