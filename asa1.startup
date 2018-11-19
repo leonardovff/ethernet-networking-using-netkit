@@ -2,3 +2,4 @@
 ifconfig eth0 10.1.1.254/24 
 
 ip route add 10.2.2.0/24 via 10.1.1.253
+route add default gw 192.168.20.1
