@@ -2,3 +2,4 @@
 ifconfig eth0 10.2.2.252/24 
 
 route add default gw 10.2.2.254
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf

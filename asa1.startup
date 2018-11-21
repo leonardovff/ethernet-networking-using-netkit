@@ -1,5 +1,9 @@
 # domain F
 ifconfig eth0 10.1.1.254/24 
 
+# add routes
 ip route add 10.2.2.0/24 via 10.1.1.253
-route add default gw 192.168.20.1
+# route add default gw 192.168.20.1
+
+# settings nat
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
